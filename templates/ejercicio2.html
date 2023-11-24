@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuario</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/estiloEjercicio1.css">
+</head>
+<body>
+<div class="container">
+    <h1>Inicio de sesión</h1>
+    <form action="/ejercicio2" method="POST">
+        <label for="usuario">Ingresa tu nombre </label>
+        <input type="str" id="usuario" name="usuario" required>
+        <br>
+        <label for="password">Ingresa tu contraseña</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Verificar</button>
+    </form>
+    <div>
+        <p>{{mensaje}}</p>
+    </div>
+</div>
+
+</body>
+</html>

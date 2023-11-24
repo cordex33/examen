@@ -1,0 +1,36 @@
+.button-container {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:nth-child(1) {
+    background-color: #ff00ff;
+}
+
+.button:nth-child(2) {
+    background-color: #62c26c;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}

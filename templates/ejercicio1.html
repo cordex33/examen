@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarro</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/estiloEjercicio1.css">
+</head>
+<body>
+<div class="container">
+    <h1>Ingresa los nombres</h1>
+    <form action="/ejercicio1" method="POST">
+        <label for="nombre">Ingresa tu nombre </label>
+        <input type="str" id="nombre" name="nombre" required>
+        <br>
+        <label for="edad">Tu edad</label>
+        <input type="int" id="edad" name="edad" required>
+        <br>
+        <label for="pintura">Ingrese la cantidad de tarros de pintura a comprar</label>
+        <input type="int" id="pintura" name="pintura" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+        {% if resultado %}
+    <div>
+        <p>Nombre del cliente: {{ nombre }} </p>
+        <p>Total sin descuento: ${{total_sin_descuento}}</p>
+        <p>El descuento es: {{descuento}}</p>
+        <p>El total a pagar es de: ${{resultado}}</p>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
